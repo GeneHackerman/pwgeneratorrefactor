@@ -27,7 +27,7 @@ function generatePassword() {
     lowerCase = window.prompt("Would you like to include lowercase characters?");
     lowerCase.toLowerCase();
     if (lowerCase !== "yes" && lowerCase !== "no")
-      window.alert("Please FUCKING enter either 'yes' or 'no'.");
+      window.alert("Please enter either 'yes' or 'no'.");
   } 
 
   while (numeric !== "yes" && numeric !== "no") {
@@ -51,7 +51,7 @@ function generatePassword() {
   console.log(lowerCase);
   console.log(numeric);
   console.log(specialCharacter);
-  return upperCase + lowerCase;
+  return upperCase + lowerCase + numeric + specialCharacter;
 }
 
 
